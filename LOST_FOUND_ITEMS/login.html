@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lost & Found | Login & Register</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<a href="LOST AND FOUND.html" class="back-home">
+<i class="fas fa-arrow-left"></i>
+Back Home
+</a>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left">
+
+        <div class="content">
+
+            <h1>Lost & Found</h1>
+
+            <p>
+
+                Welcome to the Lost & Found System.
+
+                Report lost belongings, publish found items,
+                and reconnect owners with their valuables safely.
+
+            </p>
+
+            <div class="features">
+
+                <div>
+
+                    <i class="fas fa-search"></i>
+
+                    <span>Search Lost Items</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fas fa-box-open"></i>
+
+                    <span>Report Found Items</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fas fa-user-shield"></i>
+
+                    <span>Verified Users</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fas fa-handshake"></i>
+
+                    <span>Safe Community</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right">
+
+        <div class="forms">
+
+            <!-- LOGIN -->
+
+            <div class="form-card">
+
+                <h2>Login</h2>
+
+                <form id="loginForm">
+
+                    <input
+                    type="email"
+                    placeholder="Email Address"
+                    required>
+
+                    <div class="password-box">
+
+                        <input
+                        type="password"
+                        placeholder="Password"
+                        required>
+
+                        <i class="fas fa-eye togglePassword"></i>
+
+                    </div>
+
+                    <label class="remember">
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <button class="submit-btn">
+
+                        Login
+
+                    </button>
+
+                </form>
+
+            </div>
+
+            <!-- REGISTER -->
+
+            <div class="form-card">
+
+                <h2>Create Account</h2>
+
+                <form id="registerForm">
+
+                    
+                    <input
+                    type="text"
+                    placeholder="Username"
+                    required>
+
+                    <input
+                    type="email"
+                    placeholder="Email Address"
+                    required>
+
+                    <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required>
+
+                    <select required>
+
+                        <option value="">Select Gender</option>
+
+                        <option>Male</option>
+
+                        <option>Female</option>
+
+                        <option>Prefer not to say</option>
+
+                    </select>
+
+                    <div class="password-box">
+
+                        <input
+                        type="password"
+                        placeholder="Password"
+                        required>
+
+                        <i class="fas fa-eye togglePassword"></i>
+
+                    </div>
+
+                    <div class="password-box">
+
+                        <input
+                        type="password"
+                        placeholder="Confirm Password"
+                        required>
+
+                        <i class="fas fa-eye togglePassword"></i>
+
+                    </div>
+
+                    <label class="upload">
+
+                        Upload Profile Picture
+
+                        <input
+                        type="file"
+                        accept="image/*">
+
+                    </label>
+
+                                        <!-- Privacy Policy -->
+
+                    <label class="check">
+
+                        <input
+                        type="checkbox"
+                        required>
+
+                        I agree to the
+
+                        <a href="privacy.html" target="_blank">
+
+                            Privacy Policy
+
+                        </a>
+
+                    </label>
+
+                    <!-- Terms & Conditions -->
+
+                    <label class="check">
+
+                        <input
+                        type="checkbox"
+                        required>
+
+                        I accept the
+
+                        <a href="terms.html" target="_blank">
+
+                            Terms & Conditions
+
+                        </a>
+
+                    </label>
+
+                    <button
+                    type="submit"
+                    class="submit-btn">
+
+                        Create Account
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+   height:90vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("back.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/*====================================
+        BACK BUTTON
+=====================================*/
+
+.back-home{
+
+    position:fixed;
+
+    top:20px;
+
+    left:20px;
+
+    background:#f59e0b;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+    z-index:1000;
+
+}
+
+.back-home:hover{
+
+    background:#d97706;
+
+    transform:translateX(-5px);
+
+}
+
+/*====================================
+        CONTAINER
+=====================================*/
+
+.container{
+
+    width:1300px;
+
+    max-width:100%;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:40% 60%;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+}
+
+/*====================================
+        LEFT PANEL
+=====================================*/
+
+.left{
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("back.png");
+    
+    color:white;
+
+    padding:60px 45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.content h1{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.content p{
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+    color:#f3f4f6;
+
+}
+
+/*====================================
+        FEATURES
+=====================================*/
+
+.features{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.features div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:16px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.features div:hover{
+
+    background:rgba(255,255,255,.22);
+
+    transform:translateX(8px);
+
+}
+
+.features i{
+
+    color:#FFD54F;
+
+    font-size:22px;
+
+}
+
+/*====================================
+        RIGHT PANEL
+=====================================*/
+
+.right{
+
+    background:#f8fafc;
+
+    padding:40px;
+
+    overflow-y:auto;
+
+}
+
+/*====================================
+        TWO FORMS
+=====================================*/
+
+.forms{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+.form-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.form-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.form-card h2{
+
+    text-align:center;
+
+    color:#1e3a8a;
+
+    margin-bottom:25px;
+
+}
+
+/*====================================
+        INPUTS
+=====================================*/
+
+input,
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+input:focus,
+select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+
+}
+
+/*====================================
+        PASSWORD
+=====================================*/
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    padding-right:45px;
+
+}
+
+.togglePassword{
+
+    position:absolute;
+
+    right:18px;
+
+    top:18px;
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+
+/*====================================
+        REMEMBER ME
+=====================================*/
+
+.remember{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+    font-size:15px;
+    color:#444;
+}
+
+.remember input{
+    width:auto;
+    margin:0;
+}
+
+/*====================================
+        CHECKBOXES
+=====================================*/
+
+.check{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    margin:15px 0;
+    font-size:14px;
+    line-height:1.6;
+    color:#555;
+}
+
+.check input{
+    width:auto;
+    margin-top:4px;
+}
+
+.check a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.check a:hover{
+    text-decoration:underline;
+}
+
+/*====================================
+        FILE UPLOAD
+=====================================*/
+
+.upload{
+    display:block;
+    border:2px dashed #2563eb;
+    padding:18px;
+    text-align:center;
+    border-radius:12px;
+    margin:20px 0;
+    color:#2563eb;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:600;
+}
+
+.upload:hover{
+    background:#eff6ff;
+}
+
+.upload input{
+    display:none;
+}
+
+/*====================================
+        BUTTON
+=====================================*/
+
+.submit-btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+/*====================================
+        PLACEHOLDER
+=====================================*/
+
+input::placeholder{
+    color:#888;
+}
+
+/*====================================
+        SCROLLBAR
+=====================================*/
+
+.right::-webkit-scrollbar{
+    width:8px;
+}
+
+.right::-webkit-scrollbar-track{
+    background:#eee;
+}
+
+.right::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:20px;
+}
+
+/*====================================
+        ANIMATION
+=====================================*/
+
+.form-card{
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/*====================================
+        RESPONSIVE
+=====================================*/
+
+@media(max-width:1100px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.left{
+
+display:none;
+
+}
+
+.forms{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+body{
+
+padding:15px;
+
+}
+
+.right{
+
+padding:20px;
+
+}
+
+.form-card{
+
+padding:20px;
+
+}
+
+.content h1{
+
+font-size:36px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.back-home{
+
+top:10px;
+left:10px;
+padding:10px 16px;
+font-size:14px;
+
+}
+
+.form-card h2{
+
+font-size:24px;
+
+}
+
+input,
+select{
+
+padding:13px;
+font-size:14px;
+
+}
+
+.submit-btn{
+
+padding:14px;
+font-size:15px;
+
+}
+
+}
+
+/*====================================
+        FOOTER (OPTIONAL)
+=====================================*/
+
+.footer{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+.footer a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+}
+
+.footer a:hover{
+
+    text-decoration:underline;
+
+}
+
+</style>
+</body>
+</html>
+

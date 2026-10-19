@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Report Lost </title>
+
+<link rel="stylesheet" href="report-lost.css">
+
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+REPORT  ITEMS
+</div>
+
+
+</header>
+
+<section class="hero">
+
+<h1>Report Lost Item</h1>
+
+<p>
+Complete the form below to help others identify and return your lost property.
+</p>
+
+</section>
+
+<section class="form-container">
+
+<form>
+
+<h2>Lost Item Information</h2>
+
+<label>Item Name</label>
+<input type="text" placeholder="Enter item name" required>
+
+<label>Category</label>
+
+<select required>
+
+<option>Select Category</option>
+
+<option>Phone</option>
+
+<option>Laptop</option>
+
+<option>Wallet</option>
+
+<option>Bag</option>
+
+<option>Keys</option>
+
+<option>ID Card</option>
+
+<option>Passport</option>
+
+<option>Jewelry</option>
+
+<option>Other</option>
+
+</select>
+
+<label>Item Color</label>
+<input type="text" placeholder="Example: Black">
+
+<label>Brand</label>
+<input type="text" placeholder="Example: Samsung">
+
+<label>Description</label>
+
+<textarea rows="5"
+placeholder="Describe the item clearly..."
+required></textarea>
+
+<label>Location Lost</label>
+<input type="text" placeholder="Where was it lost?" required>
+
+<label>Date Lost</label>
+<input type="date" required>
+
+<label>Upload Item Photo</label>
+<input type="file">
+
+<h2>Owner Information</h2>
+
+<label>Full Name</label>
+<input type="text" required>
+
+<label>Phone Number</label>
+<input type="tel" required>
+
+<label>Email Address</label>
+<input type="email" required>
+
+<button type="submit">
+
+Submit Report
+
+</button>
+
+</form>
+
+</section>
+<p>
+    <a href="LOST AND FOUND.html" class="button">← Back to Home</a>
+</p>
+<footer>
+
+<p>
+
+© 2026 Lost & Found Website
+
+</p>
+
+</footer>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+.header
+{
+    background-color: #222;
+    color: #000;
+}
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:280px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("back.png");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+width:70%;
+}
+
+.form-container{
+width:75%;
+margin:50px auto;
+background:white;
+padding:40px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+form h2{
+color:#0d6efd;
+margin-bottom:20px;
+margin-top:20px;
+}
+
+label{
+display:block;
+margin-top:18px;
+font-weight:bold;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:14px;
+margin-top:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:16px;
+margin-top:35px;
+background:orange;
+border:none;
+color:white;
+font-size:20px;
+cursor:pointer;
+}
+
+button:hover{
+background:#e68900;
+}
+
+footer{
+margin-top:50px;
+background:#222;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#e68900;}
+</style>
+
+</body>
+</html>

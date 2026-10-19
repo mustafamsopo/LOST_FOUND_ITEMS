@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Report Found Item</title>
+
+<link rel="stylesheet" href="report-found.css">
+
+
+</head>
+
+<body>
+
+
+<section class="hero">
+
+<h1>Report Found Item</h1>
+
+<p>
+
+Help someone recover their lost property by reporting the item you found.
+
+</p>
+
+</section>
+
+<section class="form-container">
+
+<form id="foundForm">
+
+<h2>Found Item Information</h2>
+
+<label>Item Name</label>
+
+<input type="text" placeholder="Enter item name" required>
+
+<label>Category</label>
+
+<select required>
+
+<option>Select Category</option>
+
+<option>Phone</option>
+
+<option>Laptop</option>
+
+<option>Wallet</option>
+
+<option>Bag</option>
+
+<option>Keys</option>
+
+<option>ID Card</option>
+
+<option>Passport</option>
+
+<option>Jewelry</option>
+
+<option>Documents</option>
+
+<option>Other</option>
+
+</select>
+
+<label>Item Color</label>
+
+<input type="text" placeholder="Example: Black">
+
+<label>Brand</label>
+
+<input type="text" placeholder="Example: Samsung">
+
+<label>Description</label>
+
+<textarea rows="5"
+placeholder="Describe the item in detail..."
+required></textarea>
+
+<label>Location Found</label>
+
+<input type="text"
+placeholder="Where did you find the item?"
+required>
+
+<label>Date Found</label>
+
+<input type="date" required>
+
+<label>Upload Item Photo</label>
+
+<input type="file">
+
+<h2>Finder Information</h2>
+
+<label>Full Name</label>
+
+<input type="text" required>
+
+<label>Phone Number</label>
+
+<input type="tel" required>
+
+<label>Email Address</label>
+
+<input type="email" required>
+
+<button type="submit">
+
+Submit Found Item
+
+</button>
+
+</form>
+
+</section>
+
+
+<p>
+
+<a href="LOST AND FOUND.html" class="button">← Back to Home</a>
+
+</p>
+
+</footer>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f4f6f9;
+}
+
+header{
+
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("back.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+background:
+        linear-gradient(rgba(16, 9, 9, 0.5), rgba(18, 17, 17, 0.5)),
+        url("back.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding: 150px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:15px;
+color: white;
+}
+
+.hero p{
+font-size:20px;
+width:70%;
+color: white;
+}
+
+.form-container{
+width:75%;
+margin:50px auto;
+background:white;
+padding:40px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+}
+
+form h2{
+color:#198754;
+margin-bottom:20px;
+margin-top:20px;
+}
+
+label{
+display:block;
+margin-top:18px;
+font-weight:bold;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:14px;
+margin-top:8px;
+font-size:16px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:16px;
+margin-top:30px;
+background:#198754;
+color:white;
+border:none;
+font-size:20px;
+cursor:pointer;
+}
+
+button:hover{
+background:#146c43;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#e68900;
+}
+</style>
+
+
+</body>
+</html>

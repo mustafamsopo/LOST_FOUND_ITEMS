@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title style="color: #e68900 ;">LOST AND FOUND ITEMS</title>
+<style>
+ title{
+    text-align: right;
+    
+ }   
+</style>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:darkblue;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items: ;
+}
+
+header h2{
+color:white;
+text-align: right;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-weight:bold;
+}
+
+
+.hero{
+    height:90vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("back.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#FF9800;
+color:white;
+text-decoration:none;
+border-radius:5px;
+margin:10px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#e68900;
+}
+
+section{
+padding:60px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:25px;
+color:#1565C0;
+}
+
+.about p{
+font-size:18px;
+line-height:1.8;
+text-align:center;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.feature{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.feature h3{
+margin-bottom:15px;
+color:#1565C0;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.step{
+background:white;
+padding:25px;
+border-left:6px solid #1565C0;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.stat h1{
+color:#1565C0;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.testimonial{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+footer{
+background:darkblue;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+<header >
+
+<h2 >🔍 Lost & Found Items</h2>
+
+<nav>
+<a href="LOST AND FOUND.html"><b>HOME</b></a>
+<a href="about.html"><b>ABOUT</b></a>
+<a href="features.html"><b>FEATURES</b></a>
+<a href="report-lost.html"><b>REPORT LOST</b></a>
+<a href="report-found.html"><b>REPORT FOUND</b></a>
+<a href="contact.html"><b>CONTACT</b></a>
+<a href="login.html"><b>LOGIN</b></a>
+</nav>
+
+</header>
+
+<section class="hero">
+<div>
+
+<h1>Find What Matters Most</h1>
+
+<p>
+A secure online platform that helps people report,
+search, and recover lost belongings quickly and safely.
+</p>
+
+<a href="search.html" class="btn">Search Lost Items</a>
+
+<a href="report-lost.html" class="btn">Report an Item</a>
+
+</div>
+
+</section>
+
+<section>
+<h2>Website Features</h2>
+<div class="features">
+
+<div class="feature">
+<h3>🔐 Secure Login</h3>
+<p>Create an account and securely access the platform.</p>
+</div>
+
+<div class="feature">
+<h3>📱 Report Lost Item</h3>
+<p>Submit complete information about missing items.</p>
+</div>
+
+<div class="feature">
+<h3>🎒 Report Found Item</h3>
+<p>Help owners recover their belongings.</p>
+</div>
+
+<div class="feature">
+<h3 >🔍 Search Items</h3>
+<a href="search.html"></a>
+<p>Search by category, date, location, or name.</p>
+</div>
+
+<div class="feature">
+<h3>📸 Upload Photos</h3>
+<p>Add clear pictures to improve identification.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>How It Works</h2>
+<div class="steps">
+
+<div class="step">
+<h3>1. Register</h3>
+<p>Create your free account.</p>
+</div>
+
+<div class="step">
+<h3>2. Login</h3>
+<p>Access your dashboard securely.</p>
+</div>
+
+<div class="step">
+<h3>3. Report</h3>
+<p>Submit details of lost or found items.</p>
+</div>
+
+<div class="step">
+<h3>4. Search</h3>
+<p>Look for matching reports.</p>
+</div>
+
+<div class="step">
+<h3>5. Recover</h3>
+<p>Contact the owner or finder through the platform.</p>
+</div>
+</section>
+
+
+<!-- ================= ITEM CATEGORIES ================= -->
+<section class="categories" id="categories">
+    <div class="section-title">
+        <h2>Browse Item Categories</h2>
+        <p>
+            Easily explore lost and found items by selecting a category below.
+        </p>
+    </div>
+    <div class="category-container">
+        <div class="category-card">
+            <img src="electronics.png">
+            <h3>Electronics</h3>
+            <span>Phones • Laptops • Chargers</span>
+        </div>
+        <div class="category-card">
+            <img src="https://i.redd.it/school-bag-suggestions-super-heavy-load-out-v0-8vx4zmxo6yyd1.jpg?width=2160&format=pjpg&auto=webp&s=a8d1992cdaa2ea883857dffa72a4b1c6b45bd525">
+            <h3>Bags</h3>
+            <span>School Bags • Handbags</span>
+        </div>
+        <div class="category-card">
+            <img src="ID.png">
+            <h3>ID Cards</h3>
+            <span>Student IDs • National IDs</span>
+        </div>
+        <div class="category-card">
+            <img src="books.png">
+            <h3>Books</h3>
+            <span>Notes • Textbooks</span>
+        </div>
+        <div class="category-card">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/049/414/539/small/a-collection-of-keys-on-a-metallic-ring-placed-on-a-marble-surface-indoors-photo.jpeg">
+            <h3>Keys</h3>
+            <span>Room Keys • Car Keys</span>
+        </div>
+        
+        <div class="category-card">
+           <img src="https://static.vecteezy.com/system/resources/thumbnails/075/606/908/small/close-up-shot-of-modern-wristwatch-with-dark-face-and-leather-strap-placed-on-textured-surface-with-soft-lighting-highlighting-elegant-timepiece-design-photo.jpg">
+            <h3>watches</h3>
+            <span> Rolex •Navy force </span>
+        </div>
+        <div class="category-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxSHOCm2_46lUen-mzUOyHJsGeRtAI241e0ZQNB5BeFg&s">
+            <h3>clothes</h3>
+            <span>Shirts •Trousers •Shorts</span>
+        </div>
+        <div class="category-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrNAMKMh1ssW9Y8y_qKVV6F0aG4RgNFtD5nE8sfn56PqIMnLICu_AB7Z-S&s=10">
+            <h3>wallets</h3>
+            <span>wallets</span>
+        </div >
+    </div>
+</section>
+<!-- ================= RECENTLY LOST ITEMS ================= -->
+
+<section class="recent-items">
+
+    <div class="section-title">
+
+        <h2>Recently Lost Items</h2>
+
+        <p>
+            Browse recently reported lost items.
+        </p>
+
+    </div>
+
+<div class="recent-container">
+
+<div class="item-card">
+
+<img src="https://cdn.mos.cms.futurecdn.net/mAmV4LCBhaFtA2jSjKmu39.jpg">
+
+<div class="item-info">
+
+<h3>HP Laptop</h3>
+
+<p><strong>Location:</strong> Library</p>
+
+<p><strong>Date:</strong> 28 June 2026</p>
+
+<a href="login.html">View Details</a>
+
+</div>
+
+</div>
+
+
+
+<div class="item-card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVDt80vgfNna88JIOQVM3ydMrEOhYlo1gtJRCgjVO68wn5yVlsGfX0Xtk&s=10">
+
+<div class="item-info">
+
+<h3>Black Backpack</h3>
+
+<p><strong>Location:</strong> Hostel Area Block 5</p>
+<p><strong>Date:</strong> 27 June 2026</p>
+<a href="login.html">View Details</a>
+</div>
+</div>
+<div class="item-card">
+<img src="ID.png">
+<div class="item-info">
+<h3>Student ID Card</h3>
+<p><strong>Location:</strong> Computer Lab</p>
+<p><strong>Date:</strong> 25 June 2026</p>
+<a href="login.html">View Details</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+
+<style>
+/*==================== CATEGORIES ===================*/
+.categories{
+padding:80px 8%;
+background:#f8f9fa;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+}
+
+.section-title h2{
+font-size:38px;
+color:#0b7a39;
+margin-bottom:10px;
+}
+
+.section-title p{
+
+color:#666;
+
+}
+
+.category-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.category-card{
+
+background:#fff;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.category-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.category-card img{
+
+width:200px;
+
+height:250px;
+
+margin-bottom:20px;
+
+}
+
+.category-card h3{
+
+color:#0b7a39;
+
+margin-bottom:10px;
+
+}
+
+.category-card span{
+
+color:#555;
+
+}
+
+
+
+/*==================== RECENT ITEMS ===================*/
+
+.recent-items{
+
+padding:80px 8%;
+
+background:white;
+
+}
+
+.recent-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.item-card{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+.item-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.item-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.item-info{
+
+padding:20px;
+
+}
+
+.item-info h3{
+
+color:#0b7a39;
+
+margin-bottom:10px;
+
+}
+
+.item-info p{
+
+margin:8px 0;
+
+color:#555;
+
+}
+.hero-
+
+.item-info a{
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:10px 25px;
+
+background:#0b7a39;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.item-info a:hover{
+
+background:#065b2a;
+
+}
+</style>
+
+<section>
+<h2>Our Statistics</h2>
+<div class="stats">
+<div class="stat">
+<h1>593+</h1>
+<p>Items Reported</p>
+</div>
+<div class="stat">
+<h1>413+</h1>
+<p>Items Returned</p>
+</div>
+<div class="stat">
+<h1>460+</h1>
+<p>Registered Users</p>
+</div>
+<div class="stat">
+<h1>80%</h1>
+<p>Successful Matches</p>
+</div>
+</div>
+</section>
+<section>
+
+<h2>Testimonials</h2>
+<div class="testimonials">
+<div class="testimonial">
+⭐⭐⭐
+<p>
+"I recovered my laptop within two days using this platform.
+Very easy and reliable."
+</p>
+<br>
+<b>- MR.J.Makumbusho</b>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>
+"This system made it simple to return a lost wallet to its owner."
+</p>
+<br>
+<b>MWL.Simone</b>
+</div>
+</div>
+</section>
+
+<section class="about">
+<h2>About Our Website</h2>
+<p style="color: #333;">
+The Lost & Found Management System was developed to address the growing challenge of lost and found items within educational institutions and organizations. The idea for this project was initiated by <b>Mustapha Dominick Msopo</b>, with the support and collaboration of his fellow first-year students at <b>Dar es Salaam Institute of Technology (DIT)</b>, Tanzania.
+After observing the increasing number of cases involving misplaced and unclaimed belongings on campus, the team recognized the need for a simple, secure, and efficient digital solution. Their goal was to make it easier for users to report lost items, register found items, upload photos, search for matching records, receive notifications, and help reunite owners with their belongings.
+This platform promotes honesty, responsibility, and community cooperation by providing a reliable system that improves the management and recovery of lost property.
+</p>
+</section>
+
+<footer>
+
+<h3>Lost & Found Items</h3>
+
+<p>Email: mustaphamsopo@gmail.com</p>
+
+<p>Phone: +255 783 511 422</p>
+
+<p>p.o.box 12120 ILALA DAR ES SALAAM TANZANIA</p>
+
+<br>
+
+<p>© 2026 Lost & Found Items. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Search Lost Items</title>
+
+<link rel="stylesheet" href="search.css">
+
+
+</head>
+
+<body>
+
+
+<section class="hero">
+
+<h1>Search Lost & Found Items</h1>
+
+<p>
+
+Find items that have been reported by other users.
+
+</p>
+
+</section>
+
+<section class="search-area">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search by item name...">
+
+<select id="categoryFilter">
+
+<option value="all">All Categories</option>
+
+<option>Phone</option>
+
+<option>Laptop</option>
+
+<option>Wallet</option>
+
+<option>Bag</option>
+
+<option>Keys</option>
+
+<option>ID Card</option>
+
+<option>Passport</option>
+
+<option>Jewelry</option>
+
+</select>
+
+
+Search
+
+</button>
+
+</section>
+
+<section class="items" id="itemsContainer">
+
+<div class="item" data-name="Samsung Phone" data-category="Phone">
+
+<img src="images/phone.jpg">
+
+<h3>Samsung Phone</h3>
+
+<p><b>Category:</b> Phone</p>
+
+<p><b>Status:</b> Lost</p>
+
+<p><b>Location:</b> DIT Library</p>
+
+<button>View Details</button>
+
+</div>
+
+<div class="item" data-name="Dell Laptop" data-category="Laptop">
+
+<img src="images/laptop.jpg">
+
+<h3>Dell Laptop</h3>
+
+<p><b>Category:</b> Laptop</p>
+
+<p><b>Status:</b> Found</p>
+
+<p><b>Location:</b> DH DIT</p>
+
+<button>View Details</button>
+
+</div>
+
+<div class="item" data-name="Brown Wallet" data-category="Wallet">
+
+<img src="images/wallet.jpg">
+
+<h3>Brown Wallet</h3>
+
+<p><b>Category:</b> Wallet</p>
+
+<p><b>Status:</b> Lost</p>
+
+<p><b>Location:</b> Teaching Tower floor 5</p>
+
+<button>View Details</button>
+
+</div>
+
+<div class="item" data-name="Car Keys" data-category="Keys">
+
+<img src="images/keys.jpg">
+
+<h3>Car Keys</h3>
+
+<p><b>Category:</b> Keys</p>
+
+<p><b>Status:</b> Found</p>
+
+<p><b>Location:</b> Parking Area</p>
+
+<button>View Details</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Lost & Found Items
+
+</p>
+
+</footer>
+
+<script src="search.js">
+function searchItems(){
+
+let search=document.getElementById("searchInput").value.toLowerCase();
+
+let category=document.getElementById("categoryFilter").value;
+
+let items=document.querySelectorAll(".item");
+
+items.forEach(function(item){
+
+let name=item.dataset.name.toLowerCase();
+
+let cat=item.dataset.category;
+
+let matchName=name.includes(search);
+
+let matchCategory=(category==="all" || category===cat);
+
+if(matchName && matchCategory){
+
+item.style.display="block";
+
+}
+
+else{
+
+item.style.display="none";
+
+}
+
+});
+
+}
+
+function logout(){
+
+localStorage.removeItem("loggedIn");
+
+window.location.href="login.html";
+
+}
+
+</script>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+background:
+        linear-gradient(rgba(16, 9, 9, 0.5), rgba(18, 17, 17, 0.5)),
+        url("back.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding: 150px;}
+
+.hero h1{
+font-size:46px;
+color: white;
+}
+
+.hero p{
+font-size:20px;
+margin-top:15px;
+color: white;
+}
+
+.search-area{
+
+width:90%;
+
+margin:40px auto;
+
+display:flex;
+
+gap:20px;
+
+}
+
+.search-area input,
+.search-area select{
+
+flex:1;
+
+padding:15px;
+
+font-size:16px;
+
+}
+
+.search-area button{
+
+padding:15px 30px;
+
+background:orange;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+font-size:17px;
+
+}
+
+.items{
+
+width:90%;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+padding-bottom:50px;
+
+}
+
+.item{
+
+background:white;
+
+box-shadow:0 0 10px rgba(0,0,0,.15);
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.item img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.item h3{
+
+margin:15px 0;
+
+color:#0d6efd;
+
+}
+
+.item p{
+
+margin:8px;
+
+}
+
+.item button{
+
+margin-top:15px;
+
+padding:12px 25px;
+
+background:#198754;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+}
+
+footer{
+
+background:#222;
+
+color:white;
+
+padding:20px;
+
+text-align:center;
+
+}
+
+</style>
+
+</body>
+</html>
